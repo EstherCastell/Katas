@@ -9,10 +9,15 @@ class BowlingTest extends TestCase {
     
     public function test_bowling_game_with_10_frames() {
         $game = new Bowling();
-        $completGame = $game->getFrames();
-        $this->assertEquals(10, $completGame);
-
+        $newGame = $game->getFrames();
+        $this->assertEquals(10, $newGame);
     }
 
+    public function test_game_start_with_10_pins() {
+        $game = new Bowling();
+        $newGame = $game->getPins();
+        $this->assertEquals(10, $newGame);
+
+    }
 
 }
